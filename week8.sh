@@ -9,10 +9,10 @@
 echo "Hello World!"
 
 # Make a directory named gitstuff
-mkdir gitstuff
+mkdir ~/gitstuff
 
 # Go to that directory
-cd gitstuff
+cd ~/gitstuff
 
 # Create a text file with input into it
 echo "Hi everyone!" > text1.txt
@@ -49,7 +49,7 @@ cd /dev
 ls -l
 
 # Move back to the week8 directory and confirm with dir
-cd /home/user/gitmaterial
+cd ~/gitstuff
 dir
 
 
@@ -68,13 +68,13 @@ mkfs -t ext4 ./64MB.img
 pwd
 
 # Make directories and link them via inodes
-mkdir first_one first_two
-echo "first one here!" > first_one/1st
-echo "second one here!" > first_one/2nd
-echo "third one here!" > first_one/3rd
-echo "fourth one here" > first_two/4th
-ln first_one/3rd first_two/5th
-ls -iR first_*
+mkdir ~/first_one ~/first_two
+echo "first one here!" > ~/first_one/1st
+echo "second one here!" > ~/first_one/2nd
+echo "third one here!" > ~/first_one/3rd
+echo "fourth one here" > ~/first_two/4th
+ln ~/first_one/3rd ~/first_two/5th
+ls -iR ~/first_*
 
 
 # Beginning of week 5/6/7 related scripting
